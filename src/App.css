@@ -1,0 +1,91 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+  
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  /* overflow: hidden; */
+  
+}
+
+body::-webkit-scrollbar
+{
+	width: 0.67rem;
+	background-color: #000000;
+}
+
+body::-webkit-scrollbar-thumb
+{
+	background-color: rgb(255, 255, 255);
+}
+
+.elevateContainer:hover .elevate{
+ transform: translate3d(0,0,1rem);
+ transition: 0.15s linear;
+}
+
+.spaceship {
+  /* border: 1px solid red; */
+  animation: gradient 7s ease infinite;
+  transition: ease-in-out;
+
+}
+
+@keyframes gradient {
+  0%, 100% {
+    transform: translate3d(0px, 40px, 30px) rotate3d(0.1, 0.6, 0.4, 10deg) rotatez(-10deg);
+  }
+ 
+  25% {
+    transform: translate3d(10px, 10px, 20px) rotate3d(0.1, 0.6, 0.2, -10deg)  rotatez(-10deg);
+  }
+  50% {
+    transform: translate3d(20px, 20px, 10px) rotate3d(0.1, 0.6, 0.2, -10deg)  rotatez(-10deg); 
+  }
+  75% {
+    transform: translate3d(10px, 10px, 0) rotate3d(0.1, 0.6, 0.2, 10deg)  rotatez(-10deg);
+  }
+}
+
+.inset-shadow-card{
+  box-shadow: inset 0px -50px 47px 0px #BF26ED;
+  -webkit-box-shadow: inset 0px -50px 47px 0px #BF26ED;
+  -moz-box-shadow: inset 0px -50px 47px 0px #BF26ED;
+  -o-box-shadow: inset 0px -50px 47px 0px #BF26ED;
+  }
+/* 
+  @media (hover: hover) {
+  .all-nav a:hover{
+    box-shadow: 0 0 25px 5px rgba(59,99,245,0.9);
+  }
+} */
+
+
+
+.well {
+	position: relative;
+	transition: 1s cubic-bezier(0.5, 0, 0.5, 1);
+}
+
+
+@media only screen and (min-width: 768px) {
+  body{
+    overflow: hidden;
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+ 
+  body{
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  
+}

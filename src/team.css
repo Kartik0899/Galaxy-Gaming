@@ -1,0 +1,132 @@
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.team-block .inner-box{
+position:relative;
+padding:40px 70px 28px 0px;
+}
+
+.team-block .inner-box:before{
+position:absolute;
+content:'';
+right:0px;
+top:15px;
+left:70px;
+bottom:0px;
+height: 90%;
+width: 80%;
+border: 2px solid ghostwhite;
+background-color: rgba(0, 0, 0, 0.38);
+-webkit-transition:all 500ms ease;
+-moz-transition:all 500ms ease;
+-ms-transition:all 500ms ease;
+-o-transition:all 500ms ease;
+transition:all 500ms ease;
+}
+
+.team-block .inner-box::after{
+position:absolute;
+content:'';
+right:0px;
+top:15px;
+left:70px;
+bottom:0px;
+width:0%;
+height: 90%;
+-webkit-transition:all 500ms ease;
+-moz-transition:all 500ms ease;
+-ms-transition:all 500ms ease;
+-o-transition:all 500ms ease;
+transition:all 500ms ease;
+background-color: ghostwhite;
+}
+
+
+
+.team-block .inner-box .social-icons{
+position:absolute;
+right:1rem;
+top:20%;
+z-index:1;
+}
+
+.team-block .inner-box .social-icons li{
+    position:relative;
+    margin:1rem 0;
+}
+
+.team-block .inner-box .social-icons li a{
+position:relative;
+color:#ffffff;
+font-size:1rem;
+-webkit-transition: all 0.4s;
+-moz-transition: all 0.4s;
+-o-transition: all 0.4s;
+transition: all 0.4s;
+}
+
+
+
+
+.team-block .inner-box .image{
+position:relative;
+z-index:1;
+
+background: transparent;
+box-shadow:inset 0px 0px 35px rgba(0,0,0,0.20);
+}
+
+.team-block .inner-box .image img{
+position:relative;
+width:100%;
+display:block;
+}
+
+.team-block .inner-box .lower-content{
+position:relative;
+text-align:center;
+z-index:1;
+left: 70px;
+/* padding:30px 15px 0px 110px; */
+}
+
+.team-block .inner-box .lower-content h3{
+position:relative;
+color:#ffffff;
+font-size:18px;
+font-weight:700;
+line-height:1.3em;
+}
+
+
+
+
+.team-block .inner-box .lower-content h3 a{
+position:relative;
+color:#ffffff;
+-webkit-transition: all 0.4s;
+-moz-transition: all 0.4s;
+-o-transition: all 0.4s;
+transition: all 0.4s;
+}
+
+.team-block .inner-box .lower-content .designation{
+position:relative;
+margin-top:5px;
+color:#d3d3d3;
+font-size:14px;
+}
+
+@media (min-width: 768px){
+    .team-block .inner-box:hover .lower-content h3 a,
+    .team-block .inner-box:hover .social-icons li a,
+    .team-block .inner-box:hover .lower-content .designation{
+    color:#050505;
+    }
+
+.team-block .inner-box:hover::after{
+    width:80%;
+    }
+}
